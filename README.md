@@ -23,7 +23,9 @@
 
 (06.) Sign in to Docker Hub using docker desktop.
 
-(07.) Docker Setup successful.
+(07.) We should start the docker desktop service in background services.
+
+(08.) Docker Setup successful.
 
 
 # Docker Management Commands
