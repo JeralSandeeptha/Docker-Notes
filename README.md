@@ -29,12 +29,19 @@
 # Docker Management Commands
 
 docker version: Show the Docker version information.
+
 docker info: Display system-wide information about Docker.
+
 docker system df: Show Docker disk usage.
+
 docker system prune: Remove unused data (containers, networks, images, volumes).
+
 docker system prune -a: Remove all unused images not just dangling ones.
+
 docker system prune --volumes: Remove all unused volumes.
+
 docker system events: Get real-time events from the server.
+
 docker system logs: Fetch the logs of a container.
 
 # Docker Image Commands
