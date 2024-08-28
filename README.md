@@ -6,7 +6,7 @@
   *   Go to Windows Features 
   *   Then tick WSL(Windows Sub System for Linux) and Virtual Machine Platform
 
-(02.) Then we need to restart the machine.
+(02.) Then we need to restart the machine. 
 
 (03.) Then we need to check whether WSL and VMP is correctly enabled or not. 
       For that,
