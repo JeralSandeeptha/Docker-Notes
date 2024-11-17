@@ -14,7 +14,7 @@
   *   To check WSL version ----> wsl --version
   *   To check WSL         ----> wsl --install
   *   To update WSL        ----> wsl --update
-  *   WSL config           ----> wsl --set-default-version 2
+  *   WSL config           ----> wsl --set-default-version 2 
   *   To windows version   ----> winver 
 
 (04.) Donwload and install docker desktop.
