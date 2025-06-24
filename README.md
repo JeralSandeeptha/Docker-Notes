@@ -1,12 +1,12 @@
 # Docker-Practice  
 
-### Table of Contents
+## Table of Contents
 - [Introduction](#introduction)
 
-### Introduction
+## Introduction
 - Containers package an any application ignoring it's language with everything it needs to run—code, libraries, and dependencies—so it works consistently across any environment. They're lightweight, portable, and isolated, making development, deployment, and scaling much easier and faster.
 
-#### ✅ In Summary
+### ✅ In Summary
 | Feature            | Why It’s Useful                |
 | ------------------ | ------------------------------ |
 | **Consistency**    | Same behavior everywhere       |
@@ -17,10 +17,10 @@
 | **CI/CD Friendly** | Easy automation                |
 | **Secure**         | Controlled access to resources |
 
-#### Virtualization and Containera=ization
-![Alt Text](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750805053/1_mg7of1.png){ width=300px height=200px }
+### Virtualization and Containeraization
+![Alt Text](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750805053/1_mg7of1.png)
 
-### How to setup Docker for Windows  
+## How to setup Docker for Windows  
  
 (01.) First we need to setup the windows before installation.
   *   Go to Windows Features  
@@ -47,7 +47,7 @@
 
 (08.) Docker Setup successful.
 
-### Docker Management Commands
+## Docker Management Commands
 
 docker version: Show the Docker version information.
 
@@ -65,7 +65,7 @@ docker system events: Get real-time events from the server.
 
 docker system logs: Fetch the logs of a container.
 
-### Docker Image Commands
+## Docker Image Commands
 
 docker images: List all images.
 
@@ -81,7 +81,7 @@ docker image rm <image_id>: Remove an image.
 
 docker image inspect <image_name>: Display detailed information on one or more images.
 
-### Docker Container Commands
+## Docker Container Commands
 
 docker ps: List running containers.
 
@@ -103,7 +103,7 @@ docker exec -it <container_id> <command>: Run a command in a running container.
 
 docker attach <container_id>: Attach local standard input, output, and error streams to a running container.
 
-### Docker Network Commands
+## Docker Network Commands
 
 docker network ls: List all networks.
 
@@ -125,7 +125,7 @@ docker volume inspect <volume_name>: Display detailed information on one or more
 
 docker volume rm <volume_name>: Remove a volume.
 
-### Docker Docker Compose Commands
+## Docker Docker Compose Commands
 
 docker-compose up: Start services defined in a docker-compose.yml file.
 
@@ -151,7 +151,7 @@ docker service ls: List services in the swarm.
 
 docker service create: Create a new service.
 
-### Docker Miscellaneous Commands
+## Docker Miscellaneous Commands
 
 docker login: Log in to a Docker registry.
 
