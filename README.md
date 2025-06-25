@@ -5,6 +5,8 @@
 - [Components](#components)
 - [How to setup docker for Windows](#how-to-setup-docker-for-windows)
 
+<br /><br />
+
 ## Introduction
 - Containers package an any application ignoring it's language with everything it needs to run—code, libraries, and dependencies—so it works consistently across any environment. They're lightweight, portable, and isolated, making development, deployment, and scaling much easier and faster.
 
@@ -25,14 +27,21 @@
 ### VMs and Containers
 ![Alt Text](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750805317/2_fkagm7.png)
 
+<br /><br />
+
 ## Components
 
-![]()
+![Docker Components](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750852961/1_bIQOZL_pZujjrfaaYlQ_gQ_jrqjee.webp)
 
 ### Running a Container from an Image
 ![Alt Text](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750805836/3_d76raw.png)
+
 ### Build and push an Image
 ![Alt Text](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750805836/4_lu82z8.png)
+
+<br /><br />
+
+
 
 
 
