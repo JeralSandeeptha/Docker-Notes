@@ -43,12 +43,6 @@
 
 <br /><br />
 
-
-
-
-
-
-
 ## How to setup Docker for Windows  
  
 (01.) First we need to setup the windows before installation.
@@ -75,6 +69,16 @@
 (07.) We should start the docker desktop service in background services.
 
 (08.) Docker Setup successful.
+
+<br /><br />
+
+
+
+
+
+
+
+
 
 ## Docker Management Commands
 
