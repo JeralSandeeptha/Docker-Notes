@@ -141,7 +141,7 @@ docker pause <container_id>: Pause a running container.
 
 docker unpause <container_id>: Unpause a paused container.
 
-docker exec -it <container_id> <command>: Run a command in a running container.
+docker exec -it <container_id> <command>: Run a command in a running container.(docker exec -it nginx sh)
 
 docker attach <container_id>: Attach local standard input, output, and error streams to a running container.
 
