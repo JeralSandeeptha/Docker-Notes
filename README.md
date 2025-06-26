@@ -133,6 +133,8 @@ docker stop <container_id>: Stop a running container.
 
 docker restart <container_id>: Restart a container.
 
+docker rm <container_id>: Remove a container.
+
 docker pause <container_id>: Pause a running container.
 
 docker unpause <container_id>: Unpause a paused container.
