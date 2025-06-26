@@ -5,6 +5,7 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Components](#components)
+- [Container Lifecycle](#container-lifecycle)
 - [How to setup docker for Windows](#how-to-setup-docker-for-windows)
 
 <br /><br />
@@ -43,6 +44,12 @@
 
 <br /><br />
 
+## Container Lifecycle
+
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750912804/1_os9aug.png)
+
+<br /><br />
+
 ## How to setup Docker for Windows  
  
 (01.) First we need to setup the windows before installation.
@@ -71,8 +78,6 @@
 (08.) Docker Setup successful.
 
 <br /><br />
-
-
 
 
 
