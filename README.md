@@ -125,6 +125,8 @@ docker ps: List running containers.
 
 docker ps -a: List all containers (including stopped ones).
 
+docker ps --filter name=<container_name>: Filtering options
+
 docker create <image_name>: Create a new container from an image.
 
 docker start <container_id>: Start a stopped container.
