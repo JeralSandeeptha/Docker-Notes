@@ -67,6 +67,12 @@
 
 ![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1751125839/3_pgt6xv.png)
 
+### Docker Layered Architecture
+- We can see the layeres of a docker image. It shows all the layers and their sizes.
+```docker
+docker history <container_name>
+```
+
 <br /><br />
 
 ## How to setup Docker for Windows  
