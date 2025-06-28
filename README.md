@@ -6,6 +6,7 @@
 - [Introduction](#introduction)
 - [Components](#components)
 - [Container Lifecycle](#container-lifecycle)
+- [Docker Images](#docker-images)
 - [How to setup docker for Windows](#how-to-setup-docker-for-windows)
 
 <br /><br />
@@ -47,6 +48,24 @@
 ## Container Lifecycle
 
 ![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750912804/1_os9aug.png)
+
+<br /><br />
+
+## Docker Images
+- A Docker image is a lightweight, standalone, and executable package that contains everything needed to run a piece of software
+- A Docker image is a blueprint or template for creating Docker containers.
+- It includes,
+ - The application code
+ - Runtime environment (e.g., Node.js, Python, Java)
+ - System tools and libraries
+ - Configuration files
+
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750979806/2_rm0wlu.png)
+
+- To create a `Docker Image` we need to create a `Dockerfile` first. `Dockerfile` includes all the steps and other instructions to create the `Docker Image`
+- Executes top to bottom
+
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1751125839/3_pgt6xv.png)
 
 <br /><br />
 
