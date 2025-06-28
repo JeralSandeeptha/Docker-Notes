@@ -72,6 +72,10 @@
 ```docker
 docker history <container_name>
 ```
+- There are images called `Distroless Images`. It means they are minimal docker images that contain necessary runtime dependencies of apps.
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1751151171/4_b6zdrs.png)
+- These `Ditroless Images` doesn't allows us to install unsusal things like dependencies because they are minimal images. In that case we have to use `Multi Stage Builds`
+- We can not access shells in `Ditroless Images`
 
 <br /><br />
 
