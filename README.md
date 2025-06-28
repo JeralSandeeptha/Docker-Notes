@@ -24,7 +24,7 @@
 | **CI/CD Friendly** | Easy automation                |
 | **Secure**         | Controlled access to resources |
 
-### Virtualization and Containeraization
+### Virtualization and Containeraization 
 ![Alt Text](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750805053/1_mg7of1.png)
 
 ### VMs and Containers
