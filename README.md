@@ -86,7 +86,7 @@ docker history <container_name>
 - So how do we persist this data. The way is `Docker Volumes` (They way we can persist the data of a container lifeycle)
 - We can share this volumes with other containers
 
-[Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1751189945/5_d9om3g.png)
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1751189945/5_d9om3g.png)
 
 ### Docker Volume Commands
 
