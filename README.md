@@ -361,6 +361,14 @@ docker network disconnect <network_id> <container_id>: Disconnect a container fr
   - Define all services (e.g., app, database, frontend)
   - Set their configuration (ports, env, volumes, etc.)
   - Start everything with one command
+-To run compose file
+```bash
+docker compose up
+```
+-To run compose file
+```bash
+docker compose down
+```
 
 ![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1751212793/7_asxq3z.png)
 ![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1751212814/8_mgtuiu.png)
