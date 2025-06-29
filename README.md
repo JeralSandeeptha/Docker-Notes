@@ -362,7 +362,7 @@ docker network disconnect <network_id> <container_id>: Disconnect a container fr
   - Set their configuration (ports, env, volumes, etc.)
   - Start everything with one command
     
--To run compose file
+- To run compose file
 ```bash
 docker compose up
 ```
