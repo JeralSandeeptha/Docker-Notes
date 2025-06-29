@@ -10,6 +10,7 @@
 - [Docker Volumes](#docker-volumes)
 - [Resource Management](#resource-management)
 - [Restart Policies](#restart-policies)
+- [Docker Compose](#docker-compose)
 - [How to setup docker for Windows](#how-to-setup-docker-for-windows)
 
 <br /><br />
@@ -52,6 +53,20 @@
 
 ![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750912804/1_os9aug.png)
 
+### Docker Container Commands
+docker ps: List running containers.
+docker ps -a: List all containers (including stopped ones).
+docker ps --filter name=<container_name>: Filtering options
+docker create <image_name>: Create a new container from an image.
+docker start <container_id>: Start a stopped container.
+docker stop <container_id>: Stop a running container.
+docker restart <container_id>: Restart a container.
+docker rm <container_id>: Remove a container.
+docker pause <container_id>: Pause a running container.
+docker unpause <container_id>: Unpause a paused container.
+docker exec -it <container_id> <command>: Run a command in a running container.(docker exec -it nginx sh)
+docker attach <container_id>: Attach local standard input, output, and error streams to a running container.
+
 <br /><br />
 
 ## Docker Images
@@ -79,6 +94,15 @@ docker history <container_name>
 ![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1751151171/4_b6zdrs.png)
 - These `Ditroless Images` doesn't allows us to install unsusal things like dependencies because they are minimal images. In that case we have to use `Multi Stage Builds`
 - We can not access shells in `Ditroless Images`
+
+### Docker Image Commands
+docker images: List all images.
+docker image ls: List all images.
+docker image build -t <image_name> .: Build an image from a Dockerfile.
+docker image pull <image_name>:<tag>: Pull an image from a registry.
+docker image push <image_name>:<tag>: Push an image to a registry.
+docker image rm <image_id>: Remove an image.
+docker image inspect <image_name>: Display detailed information on one or more images.
 
 <br /><br />
 
@@ -322,6 +346,32 @@ docker run -d --name app2 --network my-net anotherimage
 docker run --restart=unless-stopped myapp
 ```
 
+### ## Docker Network Commands
+docker network ls: List all networks.
+docker network inspect <network_id>: Display detailed information on one or more networks.
+docker network create <network_name>: Create a new network.
+docker network connect <network_id> <container_id>: Connect a container to a network.
+docker network disconnect <network_id> <container_id>: Disconnect a container from a network.
+
+<br /><br />
+
+## Docker Compose
+- `Docker Compose` lets you define and run multiple Docker containers using a single configuration file: docker-compose.yml.
+- Instead of running multiple docker run commands, you can:
+  - Define all services (e.g., app, database, frontend)
+  - Set their configuration (ports, env, volumes, etc.)
+  - Start everything with one command
+
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1751212793/7_asxq3z.png)
+![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1751212814/8_mgtuiu.png)
+
+### Docker Docker Compose Commands
+docker-compose up: Start services defined in a docker-compose.yml file.
+docker-compose down: Stop services defined in a docker-compose.yml file.
+docker-compose build: Build or rebuild services.
+docker-compose logs: View output from services.
+docker-compose exec <service_name> <command>: Execute a command in a running container.
+
 <br /><br />
 
 ## How to setup Docker for Windows  
@@ -353,123 +403,32 @@ docker run --restart=unless-stopped myapp
 
 <br /><br />
 
-
-
-
-
-
-
-
-
-
 ## Docker Management Commands
-
 docker version: Show the Docker version information.
-
 docker info: Display system-wide information about Docker.
-
 docker stats: Display all about the usages of the current run time.
-
 docker system df: Show Docker disk usage.
-
 docker system prune: Remove unused data (containers, networks, images, volumes).
-
 docker system prune -a: Remove all unused images not just dangling ones.
-
 docker system prune --volumes: Remove all unused volumes.
-
 docker system events: Get real-time events from the server.
-
 docker system logs: Fetch the logs of a container.
 
-## Docker Image Commands
-
-docker images: List all images.
-
-docker image ls: List all images.
-
-docker image build -t <image_name> .: Build an image from a Dockerfile.
-
-docker image pull <image_name>:<tag>: Pull an image from a registry.
-
-docker image push <image_name>:<tag>: Push an image to a registry.
-
-docker image rm <image_id>: Remove an image.
-
-docker image inspect <image_name>: Display detailed information on one or more images.
-
-## Docker Container Commands
-
-docker ps: List running containers.
-
-docker ps -a: List all containers (including stopped ones).
-
-docker ps --filter name=<container_name>: Filtering options
-
-docker create <image_name>: Create a new container from an image.
-
-docker start <container_id>: Start a stopped container.
-
-docker stop <container_id>: Stop a running container.
-
-docker restart <container_id>: Restart a container.
-
-docker rm <container_id>: Remove a container.
-
-docker pause <container_id>: Pause a running container.
-
-docker unpause <container_id>: Unpause a paused container.
-
-docker exec -it <container_id> <command>: Run a command in a running container.(docker exec -it nginx sh)
-
-docker attach <container_id>: Attach local standard input, output, and error streams to a running container.
-
-## Docker Network Commands
-
-docker network ls: List all networks.
-
-docker network inspect <network_id>: Display detailed information on one or more networks.
-
-docker network create <network_name>: Create a new network.
-
-docker network connect <network_id> <container_id>: Connect a container to a network.
-
-docker network disconnect <network_id> <container_id>: Disconnect a container from a network.
-
-## Docker Docker Compose Commands
-
-docker-compose up: Start services defined in a docker-compose.yml file.
-
-docker-compose down: Stop services defined in a docker-compose.yml file.
-
-docker-compose build: Build or rebuild services.
-
-docker-compose logs: View output from services.
-
-docker-compose exec <service_name> <command>: Execute a command in a running container.
+<br /><br />
 
 ### Docker Swarm Commands
-
 docker swarm init: Initialize a swarm.
-
 docker swarm join: Join a swarm as a node.
-
 docker swarm leave: Leave the swarm.
-
 docker node ls: List nodes in the swarm.
-
 docker service ls: List services in the swarm.
-
 docker service create: Create a new service.
 
+<br /><br />
+
 ## Docker Miscellaneous Commands
-
 docker login: Log in to a Docker registry.
-
 docker logout: Log out from a Docker registry.
-
 docker search <image_name>: Search for an image on Docker Hub.
-
 docker cp <file_path> <container_id>:<path_in_container>: Copy files or folders between a container and the local filesystem.
-
 docker wait <container_id>: Block until a container stops, then print its exit code.
