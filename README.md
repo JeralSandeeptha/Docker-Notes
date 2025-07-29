@@ -11,6 +11,7 @@
 - [Resource Management](#resource-management)
 - [Restart Policies](#restart-policies)
 - [Docker Compose](#docker-compose)
+- [Docker Network](#docker-network)
 - [How to setup docker for Windows](#how-to-setup-docker-for-windows)
 
 <br /><br />
@@ -316,19 +317,6 @@ Disables Docker's Out Of Memory killer, which normally kills containers that exc
 - Docker uses network drivers to enable communication between containers, host, and the outside world
 ![Image](https://res.cloudinary.com/djgwvmcdl/image/upload/v1751199734/6_bro6yv.png)
 
-- Inspect Docker Networks
-```cmd
-docker network ls         # List networks
-docker network inspect bridge  # Inspect details
-```  
-
-- Connecting Containers
-```cmd
-docker network create my-net
-docker run -d --name app1 --network my-net myimage
-docker run -d --name app2 --network my-net anotherimage
-```  
-
 <br /><br />
 
 ## Restart Policies
@@ -345,13 +333,6 @@ docker run -d --name app2 --network my-net anotherimage
 ```cmd
 docker run --restart=unless-stopped myapp
 ```
-
-### ## Docker Network Commands
-docker network ls: List all networks.
-docker network inspect <network_id>: Display detailed information on one or more networks.
-docker network create <network_name>: Create a new network.
-docker network connect <network_id> <container_id>: Connect a container to a network.
-docker network disconnect <network_id> <container_id>: Disconnect a container from a network.
 
 <br /><br />
 
@@ -380,6 +361,41 @@ docker-compose down: Stop services defined in a docker-compose.yml file.
 docker-compose build: Build or rebuild services.
 docker-compose logs: View output from services.
 docker-compose exec <service_name> <command>: Execute a command in a running container.
+
+<br /><br />
+
+## Docker Network
+- Docker networks allow containers to communicate with each other, the Docker host, and the internet in a secure and flexible way
+
+- Types of Networks
+
+| Network Type | Description                                                 |
+| ------------ | ----------------------------------------------------------- |
+| `bridge`     | Default network for containers. Ideal for standalone apps.  |
+| `host`       | Shares the host’s network stack. Fastest, but no isolation. |
+| `none`       | No network. Container is completely isolated.               |
+| `overlay`    | Used in Swarm mode for multi-host communication.            |
+| `macvlan`    | Assigns MAC address to containers (advanced).               |
+ 
+- Inspect Docker Networks
+```cmd
+docker network ls         # List networks
+docker network inspect bridge  # Inspect details
+```  
+
+- Connecting Containers
+```cmd
+docker network create my-net
+docker run -d --name app1 --network my-net myimage
+docker run -d --name app2 --network my-net anotherimage
+```
+
+### Docker Network Commands
+`docker network ls`: List all networks.
+`docker network inspect <network_id>`: Display detailed information on one or more networks.
+`docker network create <network_name>`: Create a new network.
+`docker network connect <network_id> <container_id>`: Connect a container to a network.
+`docker network disconnect <network_id> <container_id>`: Disconnect a container from a network.
 
 <br /><br />
 
