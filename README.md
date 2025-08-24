@@ -190,6 +190,11 @@ docker run -v mydata:/data busybox
  - `Memory`
  - `Network`
 
+- If you want to get quick details
+```cmd
+docker stats
+```
+
 - Common Resource Constraints
 
 | Resource       | Flag                                      | Example                          | Description                          |
