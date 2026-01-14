@@ -4,7 +4,7 @@
 
 ## Table of Contents
 - [Introduction](./files/introduction.md)
-- [Components](#components)
+- [Components](./files/components.md)
 - [Container Lifecycle](#container-lifecycle)
 - [Docker Images](#docker-images)
 - [Docker Volumes](#docker-volumes)
@@ -13,18 +13,6 @@
 - [Docker Compose](#docker-compose)
 - [Docker Network](#docker-network)
 - [How to setup docker for Windows](#how-to-setup-docker-for-windows)
-
-<br /><br />
-
-## Components
-
-![Docker Components](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750852961/1_bIQOZL_pZujjrfaaYlQ_gQ_jrqjee.webp)
-
-### Running a Container from an Image
-![Alt Text](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750805836/3_d76raw.png)
-
-### Build and push an Image
-![Alt Text](https://res.cloudinary.com/djgwvmcdl/image/upload/v1750805836/4_lu82z8.png)
 
 <br /><br />
 
