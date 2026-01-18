@@ -9,27 +9,10 @@
 - [Docker Images](./files/docker-images.md)
 - [Docker Volumes](./files/volumes.md)
 - [Resource Management](./files/resource-management.md)
-- [Restart Policies](#restart-policies)
+- [Restart Policies](./files/restart_policies.md)
 - [Docker Compose](#docker-compose)
 - [Docker Network](#docker-network)
 - [How to setup docker for Windows](#how-to-setup-docker-for-windows)
-
-<br /><br />
-
-## Restart Policies
-- Restart policies help ensure your containers automatically restart under certain conditions (like after a crash or reboot)
-
-### ✅ Common Restart Policies
-| Policy                     | Behavior                                                                 |
-| -------------------------- | ------------------------------------------------------------------------ |
-| `no` (default)             | Do not restart                                                           |
-| `always`                   | Always restart the container no matter what                              |
-| `unless-stopped`           | Restart always except when explicitly stopped by user                    |
-| `on-failure[:max-retries]` | Restart only if the container exits with a non-zero status (e.g., crash) |
-
-```cmd
-docker run --restart=unless-stopped myapp
-```
 
 <br /><br />
 
